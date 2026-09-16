@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lap Time Recorder - Stopwatch Putaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Stopwatch & Lap Recorder</h1>
+            <p>Ukur waktu dan catat setiap putaran (lap) secara presisi hingga milidetik.</p>
+        </header>
+
+        <div class="stopwatch-card">
+            <!-- Tampilan Utama Stopwatch -->
+            <div class="time-display" id="timeDisplay">00:00:00<span class="milliseconds">.00</span></div>
+
+            <!-- Tombol Kontrol -->
+            <div class="control-buttons">
+                <button id="btnStartPause" class="btn btn-start">Mulai</button>
+                <button id="btnLap" class="btn btn-lap" disabled>Putaran (Lap)</button>
+                <button id="btnReset" class="btn btn-reset" disabled>Reset</button>
+            </div>
+
+            <!-- Ringkasan Statistik Lap -->
+            <div class="stats-summary" id="statsSummary" style="display: none;">
+                <div class="stat-item">
+                    <span class="stat-label">Fastest Lap</span>
+                    <span class="stat-value text-success" id="fastestLap">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Slowest Lap</span>
+                    <span class="stat-value text-danger" id="slowestLap">-</span>
+                </div>
+            </div>
+
+            <!-- Daftar Catatan Putaran (Lap List) -->
+            <div class="lap-container">
+                <h2>Daftar Putaran</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th># Lap</th>
+                                <th>Waktu Lap</th>
+                                <th>Total Waktu</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lapList">
+                            <tr class="empty-row">
+                                <td colspan="3">Belum ada catatan putaran.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lap Time Recorder - Stopwatch Putaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Stopwatch & Lap Recorder</h1>
+            <p>Ukur waktu dan catat setiap putaran (lap) secara presisi hingga milidetik.</p>
+        </header>
+
+        <div class="stopwatch-card">
+            <!-- Tampilan Utama Stopwatch -->
+            <div class="time-display" id="timeDisplay">00:00:00<span class="milliseconds">.00</span></div>
+
+            <!-- Tombol Kontrol -->
+            <div class="control-buttons">
+                <button id="btnStartPause" class="btn btn-start">Mulai</button>
+                <button id="btnLap" class="btn btn-lap" disabled>Putaran (Lap)</button>
+                <button id="btnReset" class="btn btn-reset" disabled>Reset</button>
+            </div>
+
+            <!-- Ringkasan Statistik Lap -->
+            <div class="stats-summary" id="statsSummary" style="display: none;">
+                <div class="stat-item">
+                    <span class="stat-label">Fastest Lap</span>
+                    <span class="stat-value text-success" id="fastestLap">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Slowest Lap</span>
+                    <span class="stat-value text-danger" id="slowestLap">-</span>
+                </div>
+            </div>
+
+            <!-- Daftar Catatan Putaran (Lap List) -->
+            <div class="lap-container">
+                <h2>Daftar Putaran</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th># Lap</th>
+                                <th>Waktu Lap</th>
+                                <th>Total Waktu</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lapList">
+                            <tr class="empty-row">
+                                <td colspan="3">Belum ada catatan putaran.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
